@@ -1,7 +1,7 @@
 import DeleteForeverOutlined from '@mui/icons-material/DeleteForeverOutlined'
 const Note = ({note,deleteNote})=>(
     <div className="note">
-        <div className="note__body">Text</div>
+        <div className="note__body">{note.text}</div>
         <div className="note__footer">
             <DeleteForeverOutlined
             onClick = {()=>deleteNote(note.id)}
